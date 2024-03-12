@@ -6,7 +6,7 @@ class Solution {
         if(sqrt % 1 == 0){
             answer = (long)Math.pow(sqrt+1,2);
         }else{
-            answer = -1;
+            answer = -1L;
         }
         return answer;
         }
