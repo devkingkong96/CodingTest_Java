@@ -10,12 +10,12 @@ class Solution {
         if(list.size() == 0){
             return new int[] {-1};
         }
-        int [] answer = new int [list.size()];
-        int index = 0;
-        for(int i : list){
-            answer[index] = list.get(index);
-            index++;
+        Integer[] tempArray = list.toArray(new Integer[list.size()]);
+        int[] intArray = new int[list.size()];
+        for(int i = 0; i < list.size(); i++){
+            intArray[i] = tempArray[i];
         }
-        return answer;
+
+        return intArray;
     }
 }
