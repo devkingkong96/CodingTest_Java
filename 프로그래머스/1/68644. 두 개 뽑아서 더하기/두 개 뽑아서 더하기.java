@@ -10,8 +10,9 @@ class Solution {
         }
         int[] answer = new int [set.size()];
         int index = 0;
-        for(int i : set){
-            answer[index++] = i;
+        Iterator it = set.iterator();
+        while(it.hasNext()){
+            answer[index++] = (int)it.next();
         }
         Arrays.sort(answer);
         return answer;
